@@ -1,0 +1,93 @@
+:root {
+  --sm: 768px;
+  --md: 992px;
+  --lg: 1200px;
+  --bs-primary: rgb(184, 203, 255);
+  --bs-primary-rgb: 184, 203, 255;
+}
+$md: 768px;
+.sec-g {
+  padding: 100px 0;
+}
+.wrap {
+  padding-top: 70px;
+}
+// @media screen and (max-width: $md) {
+//     .wrap {
+//         padding-top: 71px;
+//     }
+// }
+#header {
+  height: 70px;
+  padding: 0 30px;
+}
+#interior {
+  height: 100vh;
+  background: url(../images/1.jpg) no-repeat 50% 50%;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+#bathroom {
+  height: 100vh;
+  background: url(../images/2.jpg) no-repeat 50% 50%;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+#product {
+  height: 100vh;
+  background: url(../images/3.jpg) no-repeat 50% 50%;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+#contact {
+  height: 2000px;
+  h2 {
+    font-size: 9rem;
+    font-weight: 600;
+    margin-top: -50px;
+  }
+}
+.container {
+  padding: 0 145px;
+  position: relative;
+  .first {
+    display: flex;
+    justify-content: center;
+  }
+  .second {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .d-pick {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 400px;
+    height: 500px;
+    background-color: aqua;
+  }
+}
+.sec-gsap-rotate {
+  position: relative;
+  .txt1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+  }
+}
