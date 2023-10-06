@@ -6,8 +6,59 @@
   --bs-primary-rgb: 184, 203, 255;
 }
 $md: 768px;
+.navbar {
+  .logo {
+    width: 100px;
+    height: 70px;
+  }
+  .navbar-brand {
+    img {
+      width: auto;
+      padding: 5px;
+      height: 60px;
+    }
+  }
+  .head-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #212529, #fff, #212529);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: #ffffff00;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.nav-link {
+  color: #fff;
+}
 .sec-g {
   padding: 100px 0;
+  position: relative;
 }
 .wrap {
   padding-top: 70px;
@@ -23,25 +74,26 @@ $md: 768px;
 }
 #interior {
   height: 100vh;
+  overflow: hidden;
   background: url(../images/1.jpg) no-repeat 50% 50%;
-  h2 {
-    color: #fff;
-  }
-  p {
-    color: #fff;
-  }
 }
 #bathroom {
   height: 100vh;
   background: url(../images/2.jpg) no-repeat 50% 50%;
-  h2 {
-    color: #fff;
-  }
-  p {
-    color: #fff;
-  }
 }
 #product {
+  height: 100vh;
+  background: url(../images/3.jpg) no-repeat 50% 50%;
+}
+#contact {
+  height: 1270px;
+  h2 {
+    font-size: 9rem;
+    font-weight: 600;
+    margin-top: -50px;
+  }
+}
+#info {
   height: 100vh;
   background: url(../images/3.jpg) no-repeat 50% 50%;
   h2 {
@@ -51,17 +103,33 @@ $md: 768px;
     color: #fff;
   }
 }
-#contact {
-  height: 2000px;
-  h2 {
-    font-size: 9rem;
-    font-weight: 600;
-    margin-top: -50px;
-  }
-}
 .container {
   padding: 0 145px;
   position: relative;
+
+  .top-let {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    h2 {
+      font-size: 5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .bottom-let {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    h2 {
+      font-size: 20rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
   .first {
     display: flex;
     justify-content: center;
@@ -70,21 +138,81 @@ $md: 768px;
     display: flex;
     justify-content: flex-end;
   }
-
   .d-pick {
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .d-pick1 {
     position: absolute;
     top: 63%;
-    left: 50%;
+    left: 60%;
     width: 400px;
     height: 500px;
-    background-color: aqua;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 400px;
+      height: 500px;
+      background-color: rgba(255, 255, 255, 0.233);
+    }
+  }
+  .d-pick2 {
+    position: absolute;
+    margin-top: 250px;
+    top: 100%;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 600px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.233);
+    }
+  }
+  .d-pick3 {
+    z-index: 10;
+    position: absolute;
+    margin-top: 450px;
+    top: 100%;
+    left: 75%;
+    width: 300px;
+    height: 300px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.233);
+    }
   }
 }
 .sec-gsap-rotate {
   position: relative;
   .txt1 {
+    z-index: 15;
     position: absolute;
-    top: 55%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;

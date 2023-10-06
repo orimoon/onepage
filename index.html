@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -48,25 +48,23 @@
 
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="./dist/comm.js" defer></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div class="wrap">
-      <header id="header" class="bg-light fixed-top">
+      <header id="header" class="bg-dark fixed-top">
         <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
-            <h1>
-              <a class="navbar-brand" href="#">Logo</a>
-            </h1>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="logo">
+              <a class="navbar-brand" href="#"
+                ><img src="./images/Untitled-1.png" alt=""
+              /></a>
+            </div>
+            <div class="head-txt">dream your dream</div>
+
             <div
               class="collapse navbar-collapse justify-content-end"
               id="collapsibleNavbar"
@@ -83,6 +81,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#info">info</a>
                 </li>
               </ul>
             </div>
@@ -101,7 +102,21 @@
             <!-- <div class="title d-flex justify-content-center mb-5"></div> -->
             <div class="row">
               <!-- sm : 768px 기준 -->
-              <div class="col-sm-8">
+              <div class="top-let col-sm-12">
+                <h2
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top"
+                >
+                  INTERIOR DESIGN
+                </h2>
+                <p data-aos="fade-in">Architecture is frozen music</p>
+              </div>
+              <div class="bottom-let col-sm-12">
                 <h2
                   data-aos="fade-up"
                   data-aos-delay="50"
@@ -109,58 +124,10 @@
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"
                   data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
+                  data-aos-anchor-placement="top"
                 >
-                  INTERIOR DESIGN
+                  MODERN
                 </h2>
-                <p data-aos="fade-in">Architecture is frozen music</p>
-              </div>
-              <div class="col-sm-4">
-                <span class="glyphicon glyphicon-qrcode"></span>
-              </div>
-            </div>
-
-            <div class="tabs-wrap">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                  <a data-toggle="tab" href="#home">Home</a>
-                </li>
-                <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                  <h3>HOME</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <h3>Menu 1</h3>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                  <h3>Menu 2</h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
-                  </p>
-                </div>
-                <div id="menu3" class="tab-pane fade">
-                  <h3>Menu 3</h3>
-                  <p>
-                    Eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -169,7 +136,22 @@
           <div class="container">
             <!-- <div class="title d-flex justify-content-center mb-5"></div> -->
             <div class="row">
-              <div class="col-sm-8">
+              <!-- sm : 768px 기준 -->
+              <div class="top-let col-sm-12">
+                <h2
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top"
+                >
+                  BATHROOM DESIGN
+                </h2>
+                <p data-aos="fade-in">Architecture is frozen music</p>
+              </div>
+              <div class="bottom-let col-sm-12">
                 <h2
                   data-aos="fade-up"
                   data-aos-delay="50"
@@ -177,14 +159,10 @@
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"
                   data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
+                  data-aos-anchor-placement="top"
                 >
-                  INTERIOR DESIGN
+                  NATURE
                 </h2>
-                <p data-aos="fade-in">Architecture is frozen music</p>
-              </div>
-              <div class="col-sm-4">
-                <span class="glyphicon glyphicon-qrcode"></span>
               </div>
             </div>
           </div>
@@ -193,7 +171,22 @@
           <div class="container">
             <!-- <div class="title d-flex justify-content-center mb-5"></div> -->
             <div class="row">
-              <div class="col-sm-8">
+              <!-- sm : 768px 기준 -->
+              <div class="top-let col-sm-12">
+                <h2
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top"
+                >
+                  PRODUCT DESIGN
+                </h2>
+                <p data-aos="fade-in">Architecture is frozen music</p>
+              </div>
+              <div class="bottom-let col-sm-12">
                 <h2
                   data-aos="fade-up"
                   data-aos-delay="50"
@@ -201,14 +194,10 @@
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"
                   data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
+                  data-aos-anchor-placement="top"
                 >
-                  INTERIOR DESIGN
+                  CLASSIC
                 </h2>
-                <p data-aos="fade-in">Architecture is frozen music</p>
-              </div>
-              <div class="col-sm-4">
-                <span class="glyphicon glyphicon-qrcode"></span>
               </div>
             </div>
           </div>
@@ -267,10 +256,69 @@
                 PICKS
               </h2>
             </div>
-            <div class="d-pick">ddd</div>
+            <div
+              class="d-pick1 d-pick"
+              data-aos="fade-left"
+              data-aos-delay="10"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
+              <img src="./images/4.jpg" alt="" />
+            </div>
+            <div
+              class="d-pick2 d-pick"
+              data-aos="fade-right"
+              data-aos-delay="10"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
+              <img src="./images/5.jpg" alt="" />
+            </div>
+            <div
+              class="d-pick3 d-pick"
+              data-aos="fade-down"
+              data-aos-delay="10"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
+              <img src="./images/6.jpg" alt="" />
+            </div>
           </div>
           <div class="txt1">
             <img src="./images/Untitled-2.svg" alt="" />
+          </div>
+        </section>
+        <section id="info" class="sec-g">
+          <div class="container">
+            <!-- <div class="title d-flex justify-content-center mb-5"></div> -->
+            <div class="row">
+              <div class="col-sm-8">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top"
+                >
+                  INTERIOR DESIGN
+                </h2>
+                <p data-aos="fade-in">Architecture is frozen music</p>
+              </div>
+              <div class="col-sm-4">
+                <span class="glyphicon glyphicon-qrcode"></span>
+              </div>
+            </div>
           </div>
         </section>
       </main>
