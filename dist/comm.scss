@@ -8,6 +8,7 @@
 $md: 768px;
 .sec-g {
   padding: 100px 0;
+  position: relative;
 }
 .wrap {
   padding-top: 70px;
@@ -71,12 +72,30 @@ $md: 768px;
     justify-content: flex-end;
   }
 
-  .d-pick {
+  .d-pick1 {
     position: absolute;
     top: 63%;
-    left: 50%;
+    left: 60%;
     width: 400px;
     height: 500px;
+    background-color: aqua;
+  }
+  .d-pick2 {
+    position: absolute;
+    margin-top: 250px;
+    top: 100%;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(81, 140, 140);
+  }
+  .d-pick3 {
+    position: absolute;
+    margin-top: 450px;
+    top: 100%;
+    left: 75%;
+    width: 300px;
+    height: 300px;
     background-color: aqua;
   }
 }
@@ -89,5 +108,42 @@ $md: 768px;
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
+  }
+}
+.tabs-wrap {
+  img {
+    object-fit: cover;
+  }
+}
+.nav-tabs {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+.tab-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav {
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: #fff;
+  --bs-nav-link-disabled-color: #fff;
+}
+.nav-tabs {
+  // border-bottom: none;
+  --bs-nav-tabs-border-width: none;
+  --bs-nav-tabs-border-color: none;
+  --bs-nav-tabs-border-radius: none;
+  --bs-nav-tabs-link-hover-border-color: none;
+  --bs-nav-tabs-link-active-color: none;
+  --bs-nav-tabs-link-active-bg: none;
+  --bs-nav-tabs-link-active-border-color: none;
+
+  .nav-link.active {
+    color: #fff;
+    border-bottom: #fff;
+    border-bottom: 1px solid;
   }
 }
