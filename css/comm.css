@@ -141,6 +141,7 @@
   display: flex;
   justify-content: flex-end;
 }
+<<<<<<< HEAD
 .container .d-pick img {
   display: block;
   height: 100%;
@@ -148,6 +149,8 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+=======
+>>>>>>> 9862eab4718eb76ac5413fb02a37c75e8e7ab269
 .container .d-pick1 {
   position: absolute;
   top: 63%;
@@ -208,6 +211,24 @@
   height: 300px;
   background-color: rgba(255, 255, 255, 0.233);
 }
+.container .d-pick2 {
+  position: absolute;
+  margin-top: 250px;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  height: 300px;
+  background-color: rgb(81, 140, 140);
+}
+.container .d-pick3 {
+  position: absolute;
+  margin-top: 450px;
+  top: 100%;
+  left: 75%;
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+}
 
 .sec-gsap-rotate {
   position: relative;
@@ -220,4 +241,43 @@
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
+}
+
+.tabs-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nav-tabs {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
+.tab-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: #fff;
+  --bs-nav-link-disabled-color: #fff;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: none;
+  --bs-nav-tabs-border-color: none;
+  --bs-nav-tabs-border-radius: none;
+  --bs-nav-tabs-link-hover-border-color: none;
+  --bs-nav-tabs-link-active-color: none;
+  --bs-nav-tabs-link-active-bg: none;
+  --bs-nav-tabs-link-active-border-color: none;
+}
+.nav-tabs .nav-link.active {
+  color: #fff;
+  border-bottom: #fff;
+  border-bottom: 1px solid;
 }/*# sourceMappingURL=comm.css.map */
